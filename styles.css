@@ -13,6 +13,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -21,8 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--dark-slate-grey);
-  font-family: "Roboto", sans-serif;
+  background-color: var(--charcoal-grey);
 }
 
 p {
@@ -81,8 +81,44 @@ p {
   background-repeat: no-repeat;
 }
 
+.sign-up_form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 32px;
+  gap: 6px;
+}
+.sign-up_form label {
+  font-size: 11px;
+  font-weight: 700;
+}
+.sign-up_form input {
+  border: 1px solid var(--grey);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  padding: 18px 14px;
+}
+.sign-up_form input::placeholder {
+  color: var(--grey);
+}
+.sign-up_form input:focus {
+  outline: 1px solid black;
+}
 
-
+.sign-up_form button {
+  margin-top: 16px;
+  padding: 16px 0;
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
