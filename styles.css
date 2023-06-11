@@ -64,13 +64,25 @@ p {
 }
 
 .sign-up_heading p {
-  font-size: 13px;
+  font-size: 14px;
 }
 .sign-up_heading ul {
-  font-size: 13px;
-  margin-left: 14px;
-  /* padding: 0 14px; */
+  font-size: 14px;
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
+
+.sign-up_heading ul li {
+  padding-left: 1.5rem;
+  background-image: url(./assets/images/icon-list.svg);
+  background-size: 1rem;
+  background-repeat: no-repeat;
+}
+
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
