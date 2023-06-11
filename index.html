@@ -32,14 +32,31 @@
           </ul>
         </div>
 
-        <form action="#" class="sign-up_form">
-          <label for="email">Email Address</label>
+        <form
+          action="#"
+          class="sign-up_form"
+          onsubmit="handleSubmit(event)"
+          novalidate
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              font-size: 11px;
+              font-weight: 700;
+            "
+          >
+            <label for="email">Email Address</label>
+
+            <span id="error_span" class="hidden">Valid email required</span>
+          </div>
 
           <input
             type="email"
             name="email"
             id="email"
-            placeholder="email@company.com "
+            placeholder="email@company.com"
           />
 
           <button type="submit">Subscribe to monthly newsletter</button>
