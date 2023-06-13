@@ -25,8 +25,14 @@ function handleSubmit(event) {
     const signUpElement = document.querySelector(".sign-up");
     const emailSpanElement = document.getElementById("email_span");
 
-    successElement.classList.remove("hidden");
-    signUpElement.classList.add("hidden");
+    signUpElement.style.animation = "fadeOut 1s";
+
     emailSpanElement.innerHTML = value;
+
+    setTimeout(() => {
+      successElement.classList.remove("hidden");
+      signUpElement.classList.add("hidden");
+      successElement.style.animation = "fadeIn 1s";
+    }, 1000);
   }
 }
