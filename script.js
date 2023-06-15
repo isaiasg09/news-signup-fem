@@ -33,6 +33,6 @@ function handleSubmit(event) {
       successElement.classList.remove("hidden");
       signUpElement.classList.add("hidden");
       successElement.style.animation = "fadeIn 1s";
-    }, 1000);
+    }, 800);
   }
 }
